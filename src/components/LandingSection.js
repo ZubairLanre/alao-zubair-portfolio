@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, Text, VStack, HStack, Stack, Button } from "@chakra-ui/react";
+import { Avatar, Heading, Text, VStack, Stack, Button } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

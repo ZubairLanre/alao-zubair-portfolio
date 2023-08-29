@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Avatar, Heading, Text, Stack, Button, Box } from "@chakra-ui/react";
+import { Heading, Text, Stack, } from "@chakra-ui/react";
 
 const greeting = "I'm Alao Zubair Lanre, take a look at some of my work that I have done in various programming languages.";
 const paragraph = `I'm a passionate web developer, I possess an insatiable curiosity about the various aspects of web development, both front-end and back-end. I love technology and it fuels my drive to push myself beyond my limits. With a firm belief in my abilities, I approach every project with a determination to succeed.
