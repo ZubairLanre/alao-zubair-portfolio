@@ -99,12 +99,12 @@ const ContactMeSection = () => {
                     Contact Me 
                 </Heading> 
 
-                <Stack flexDirection={{base: "column", lg: "row"}}>
-                    <VStack flex="1" spacing={4}>
+                <Stack flexDirection={{base: "column", lg: "row"}} spacing={8}> 
+                    <VStack flex="1" spacing={8}>
                         <Text>
                             {contactMessage}
                         </Text>
-                        <HStack spacing={8} justifyContent="center">
+                        <HStack spacing={4} justifyContent="center">
                             {socials.map(({icon, url}) => (
                                 <a  
                                     key={url}
@@ -112,15 +112,27 @@ const ContactMeSection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <FontAwesomeIcon icon={icon} size="2x" key={url} _hover={{color: "#9b59b6"}} />
+                                    <FontAwesomeIcon
+                                        icon={icon} size="2x" key={url} 
+                                        style={{ transition: 'color 0.3s ease-in-out' }}
+                                        onMouseEnter={(e) => (e.target.style.color = '#9b59b6')}
+                                        onMouseLeave={(e) => (e.target.style.color = '#fff')}
+                                        />
                                 </a>
                             ))}
                         </HStack>
                     </VStack>
-                    <VStack maxW="800px" flex="1" px={16}>
+                    <VStack maxW="800px" flex="1" spacing={4}>
                         <Box  rounded="md" w="100%">
-                            <form  name="contact" method="POST" data-netlify="true">
-                                <input type="hidden" name="form-name" value="contact" />    
+                            <form  name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <p style={{ display: 'none' }}>
+                                <label>
+                                    Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                            </p>
+                            <input type="hidden" name="subject" 
+                                value="Contact Me Form from https://zubairlanreporfolio.netlify.app/" /> 
+
                                 <VStack spacing={4}>
                                     <FormControl isInvalid={!!formik.errors.firstName  && formik.touched.firstName}>
                                         <FormLabel htmlFor="firstName">Name</FormLabel> 
@@ -146,7 +158,7 @@ const ContactMeSection = () => {
                                     </FormControl>
 
                                     <FormControl isInvalid={!!formik.errors.message && formik.touched.message}> 
-                                        <FormLabel htmlFor="message">Your message</FormLabel> 
+                                        <FormLabel htmlFor="message">Your Message</FormLabel> 
                                         <Textarea 
                                             id="message" 
                                             name="message" 

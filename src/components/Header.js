@@ -123,16 +123,22 @@ const Header = () => {
                         <Button ref={btnRef} backgroundColor="#FFF" _hover={{backgroundColor: "#f39c12"}} onClick={onOpen} display={{ base: "block", md: "none" }}>
                             <FontAwesomeIcon icon={faBars}  />
                         </Button>
-                        <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={btnRef} >
+                        <Drawer 
+                            isOpen={isOpen} 
+                            placement="right" 
+                            onClose={() => {
+                                onClose(); // Close the Drawer when onClose is called
+                            }} 
+                            finalFocusRef={btnRef} >
                                 <DrawerOverlay />
                                 <DrawerContent backgroundColor="#0d1432" color="#fff">
                                 <DrawerCloseButton />
                                 <DrawerBody display="flex" flexDirection="column" mt={100}>
                                     {/* Mobile Menu items */}
-                                    <MenuItem href="#about" onClick={handleClick("about")}>About</MenuItem>
-                                    <MenuItem href="#experience" onClick={handleClick("experience")}>Experience</MenuItem>
-                                    <MenuItem href="#projects" onClick={handleClick("projects")}>Projects</MenuItem>
-                                    <MenuItem href="#contactme" onClick={handleClick("contactme")}>Contact Me</MenuItem>
+                                    <MenuItem href="#about" onClick={() => { handleClick("about"); onClose(); }}>About</MenuItem>
+                                    <MenuItem href="#experience" onClick={() => { handleClick("experience"); onClose(); }}>Experience</MenuItem>
+                                    <MenuItem href="#projects" onClick={() => { handleClick("projects"); onClose(); }}>Projects</MenuItem>
+                                    <MenuItem href="#contactme" onClick={() => { handleClick("contactme"); onClose(); }}>Contact Me</MenuItem>
                                 </DrawerBody>
                                 </DrawerContent>
                             </Drawer>

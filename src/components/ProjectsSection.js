@@ -76,7 +76,7 @@ const ProjectsSection = () => {
                         title={project.title}
                         description={project.description}
                         imageSrc={project.getImageSrc()}
-                        siteSrc={project.codeSrc}
+                        codeSrc={project.codeSrc}
                         demo={project.demo}
                     />
                 ))}
