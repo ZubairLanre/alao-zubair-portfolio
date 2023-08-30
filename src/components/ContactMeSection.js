@@ -138,6 +138,7 @@ const ContactMeSection = () => {
                                         <Input 
                                             id="firstName" 
                                             name="firstName" 
+                                            type="text"
                                             {...formik.getFieldProps("firstName")} 
                                             borderColor="#9b59b6"
                                         /> 
