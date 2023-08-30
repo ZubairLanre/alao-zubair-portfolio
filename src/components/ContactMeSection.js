@@ -34,15 +34,15 @@ const socials = [
     },
     {
         icon: faGithub,
-        url: "https://github.com/ZubairLanre", 
+        url: "https://github.com/ZubairAlao", 
     },
     {
         icon: faLinkedin,
-        url: "https://www.linkedin.com/in/zubair-alao-4a95b3174/", 
+        url: "https://www.linkedin.com/in/zubairAlao", 
     },
     {
         icon: faTwitter,
-        url: "https://twitter.com/Zubair_Lanre", 
+        url: "https://twitter.com/Zubair_Coder", 
     },
     {
         icon: faWhatsapp,
@@ -133,16 +133,16 @@ const ContactMeSection = () => {
                             <input type="hidden" name="form-name" value="contact" /> 
 
                                 <VStack spacing={4}>
-                                    <FormControl isInvalid={!!formik.errors.firstName  && formik.touched.firstName}>
-                                        <FormLabel htmlFor="firstName">Name</FormLabel> 
+                                    <FormControl isInvalid={!!formik.errors.name  && formik.touched.name}>
+                                        <FormLabel htmlFor="name">Name</FormLabel> 
                                         <Input 
                                             id="name" 
                                             name="name" 
                                             type="text"
-                                            {...formik.getFieldProps("firstName")} 
+                                            {...formik.getFieldProps("name")} 
                                             borderColor="#9b59b6"
                                         /> 
-                                        <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
+                                        <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
                                     </FormControl>
                                     
                                     <FormControl isInvalid={!!formik.errors.email && formik.touched.email}> 
