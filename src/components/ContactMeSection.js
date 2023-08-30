@@ -136,8 +136,8 @@ const ContactMeSection = () => {
                                     <FormControl isInvalid={!!formik.errors.firstName  && formik.touched.firstName}>
                                         <FormLabel htmlFor="firstName">Name</FormLabel> 
                                         <Input 
-                                            id="firstName" 
-                                            name="firstName" 
+                                            id="name" 
+                                            name="name" 
                                             type="text"
                                             {...formik.getFieldProps("firstName")} 
                                             borderColor="#9b59b6"
