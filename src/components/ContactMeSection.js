@@ -130,8 +130,7 @@ const ContactMeSection = () => {
                                     Don’t fill this out if you’re human: <input name="bot-field" />
                                 </label>
                             </p>
-                            <input type="hidden" name="subject" 
-                                value="Contact Me Form from https://zubairlanreporfolio.netlify.app/" /> 
+                            <input type="hidden" name="form-name" value="contact" /> 
 
                                 <VStack spacing={4}>
                                     <FormControl isInvalid={!!formik.errors.firstName  && formik.touched.firstName}>

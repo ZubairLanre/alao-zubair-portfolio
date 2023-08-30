@@ -45,7 +45,7 @@ const About = () => {
                 {greeting}
             </Heading>
 
-            <Text as="p" size="md" flex="2" textAlign={{base: "justify", md: "left"}}>  {/* Added flex="1" to make the heading and text share equal space */}
+            <Text as="p" size="md"  flex="2" textAlign={{base: "justify", md: "left"}}>  {/* Added flex="1" to make the heading and text share equal space */}
                 {paragraph}
             </Text>
         </Stack>
