@@ -17,6 +17,9 @@ const mySkills = [
     skill: "React",
   },
   {
+    skill: "UIUX",
+  },
+  {
     skill: "Git and Github",
   },
   {
@@ -29,6 +32,12 @@ const mySkills = [
 
 const MyExperiences = [
     // ... other experiences ...
+    {
+      timestamp: "November 2023",
+      title: "Meta Front-End Developer Specialization - Coursera ",
+      description:
+        "Completed Meta Front-End Developer Specialization, gaining proficiency in HTML, CSS, JavaScript, UIUX, Version Control and React. Developed my portfolio and Little Lemon Restaurant App.",
+    },
     {
       timestamp: "April 2023",
       title: "CS50X: Introduction To Computer Science - CS50",

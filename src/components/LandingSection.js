@@ -7,7 +7,7 @@ import avatarImage from "../images/lanre4b.png";
 
 
 const bio1 = "I'm a Front-End Developer";
-const bio2 = "I'm a Front-End Web Developer with experience in HTML, CSS and JavaScript. I specialize in building and designing interactive and dynamic web pages that provide an engaging user experience.";
+const bio2 = "I'm a Front-End Web Developer skilled in HTML, CSS, JavaScript, and React.  I specialize in building and designing interactive and dynamic web pages that provide an engaging user experience";
 
 const LandingSection = () => {
 
@@ -30,12 +30,6 @@ const LandingSection = () => {
         >
             <Stack spacing={{base: "8", md: "8"}} justifyContent={{base: "center", md: "space-between" }} alignItems="center" direction={{ base: "column", md: "row" }}>
 
-                {/* <Avatar 
-                    display={{ base: 'block', md: 'none' }}
-                    src={avatarImage}
-                    size="2xl" 
-                    name="Alao Zubair Lanre" 
-                /> */}
 
                 <VStack spacing={8} textAlign="left" align={{base: "center", md: "start"}}  >
                     <VStack align={{base: "center", md: "start"}}>

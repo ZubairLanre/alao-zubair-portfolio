@@ -5,6 +5,22 @@ import Card from "./Card";
 
 const projects = [
     {
+        title: "Movie Maze",
+        description:
+          "Movie Maze is a web application built with React and Chakra UI to help users with information about popular movies and allow them to manage their favorite TV shows effortlessly.",
+        getImageSrc: () => require("../images/MovieMaze.jpg"),
+        codeSrc: () => "https://github.com/ZubairAlao/movie-database-app",
+        demo: () => "https://moviemazedb.netlify.app/",
+    },
+    {
+        title: "E-Commerce Page",
+        description:
+          "Simple Event Booking system done with React and Chakra UI to help users find and book events.",
+        getImageSrc: () => require("../images/eventnaija.jpg"),
+        codeSrc: () => "https://github.com/ZubairAlao/event-booking-system",
+        demo: () => "https://naijaevent.netlify.app/",
+    },
+    {
       title: "E-Commerce Page",
       description:
         "Simple E-Commerce page for adding items to cart using HTML, SCSS, and JavaScript.",

@@ -4,7 +4,7 @@ import { Heading, Text, Stack, } from "@chakra-ui/react";
 
 const greeting = "I'm Alao Zubair Lanre. Take a look at some of my work that I have done in various programming languages.";
 const paragraph = `I'm a passionate web developer, I possess an insatiable curiosity about the various aspects of web development, both front-end and back-end. I love technology and it fuels my drive to push myself beyond my limits. With a firm belief in my abilities, I approach every project with a determination to succeed.
-Through my experience in HTML, CSS, JavaScript, and Python, I have honed my skills and gained a deeper understanding of the intricacies of web development. In my first project, I employed Flask technology to create an innovative solution that showcased my proficiency in web development.`;
+Through my experience in HTML, CSS, JavaScript, React and Python, I have honed my skills and gained a deeper understanding of the intricacies of web development. In my first project, I employed Flask technology to create an innovative solution that showcased my proficiency in web development.`;
 
 const About = () => {
     return (
