@@ -10,7 +10,7 @@ import {
     Stack,
     Textarea,
     VStack,
-    Input, 
+    Input,
     Text,
 } from "@chakra-ui/react"
 import * as Yup from 'yup'

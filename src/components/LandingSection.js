@@ -42,7 +42,7 @@ const LandingSection = () => {
                         </Text>
                     </VStack>
                     <VStack align="start">
-                        <Button 
+                        <Button
                             as="a"
                             href="#about"
                             backgroundColor="#f39c12" display="flex" alignItems="center"
@@ -59,10 +59,10 @@ const LandingSection = () => {
                 </VStack>
 
                 <Avatar 
-                    // display={{ base: 'none', md: 'block' }}
+                    display={{ base: 'none', sm: 'block' }}
                     src={avatarImage}
                     size={{base: "3xl", md:"3xl"}}
-                    name="Alao Zubair Lanre" 
+                    name="Alao Zubair Lanre"
                 />
             </Stack>
         </FullScreenSection>

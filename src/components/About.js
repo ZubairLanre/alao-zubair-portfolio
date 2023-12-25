@@ -31,6 +31,9 @@ const About = () => {
                 left: "0",
                 backgroundColor: "#9b59b6", 
             }}
+            maxW="xl" // Limiting the width on small screens
+            textAlign={{ base: "center", md: "left" }} // Align left on medium screens
+            mx="auto" // Center on small screens
         >
             About Me
         </Heading>
@@ -41,11 +44,18 @@ const About = () => {
             direction={{ base: "column", md: "row" }}
             alignItems={{ base: "center", md: "flex-start" }}  // Align items to the start in the "md" breakpoint
         >
-            <Heading as="h3" size="lg" flex="1" textAlign={{base: "left", md: "right"}}>  {/* Added flex="1" to make the heading and text share equal space */}
+            <Heading as="h3" size="lg" flex="1" textAlign={{base: "left", md: "right"}}
+                maxW="xl" // Limiting the width on small screens
+                mx="auto" // Center on small screens
+            > 
+            
                 {greeting}
             </Heading>
 
-            <Text as="p" size="md"  flex="2" textAlign={{base: "justify", md: "left"}}>  {/* Added flex="1" to make the heading and text share equal space */}
+            <Text as="p" size="md"  flex="2" textAlign={{base: "justify", md: "left"}}
+                maxW="xl" // Limiting the width on small screens
+                mx="auto" // Center on small screens
+            > 
                 {paragraph}
             </Text>
         </Stack>

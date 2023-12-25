@@ -13,7 +13,7 @@ const projects = [
         demo: () => "https://moviemazedb.netlify.app/",
     },
     {
-        title: "E-Commerce Page",
+        title: "Event Naija",
         description:
           "Simple Event Booking system done with React and Chakra UI to help users find and book events.",
         getImageSrc: () => require("../images/eventnaija.jpg"),

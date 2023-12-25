@@ -17,7 +17,7 @@ const mySkills = [
     skill: "React",
   },
   {
-    skill: "UIUX",
+    skill: "UI/UX",
   },
   {
     skill: "Git and Github",
@@ -36,7 +36,7 @@ const MyExperiences = [
       timestamp: "November 2023",
       title: "Meta Front-End Developer Specialization - Coursera ",
       description:
-        "Completed Meta Front-End Developer Specialization, gaining proficiency in HTML, CSS, JavaScript, UIUX, Version Control and React. Developed my portfolio and Little Lemon Restaurant App.",
+        "Completed Meta Front-End Developer Specialization on Coursera, honing my skills in HTML, CSS, JavaScript, UI/UX design, version control, and React. During the program, I built both my professional portfolio and the Little Lemon Restaurant App.",
     },
     {
       timestamp: "April 2023",
@@ -93,13 +93,13 @@ const Experience = () => {
       </Heading>
       <Box display="flex" flexWrap="wrap" gridGap={8}>
         {mySkills.map((skill, index) => (
-          <Box key={index} 
-            border="1px" 
-            // borderColor="#c7d55e0"
-            boxShadow="0px 4px 6px rgba(0, 0, 0, 0.3)"
-            px={5}
-            py={2}
-
+          <Box key={index}
+            minW="70px"
+            p={4}
+            borderRadius="md"
+            borderWidth="1px"
+            boxShadow="md"
+            textAlign="center"
         >
             {skill.skill}</Box>
         ))}
