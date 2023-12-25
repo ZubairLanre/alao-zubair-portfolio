@@ -94,7 +94,7 @@ const Experience = () => {
       <Box display="flex" flexWrap="wrap" gridGap={8}>
         {mySkills.map((skill, index) => (
           <Box key={index}
-            minW="70px"
+            // minW="70px"
             p={4}
             borderRadius="md"
             borderWidth="1px"
