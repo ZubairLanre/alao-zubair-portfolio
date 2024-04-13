@@ -5,6 +5,14 @@ import Card from "./Card";
 
 const projects = [
     {
+        title: "Millenco",
+        description:
+          "Millenco is a financial cooperative focused on empowering individuals through collective financial efforts.",
+        getImageSrc: () => require("../images/millenco.jpg"),
+        codeSrc: () => "https://github.com/ZubairAlao/Millenco-coop",
+        demo: () => "https://millenco.netlify.app/",
+    },
+    {
         title: "Movie Maze",
         description:
           "Movie Maze is a web application built with React and Chakra UI to help users with information about popular movies and allow them to manage their favorite TV shows effortlessly.",
