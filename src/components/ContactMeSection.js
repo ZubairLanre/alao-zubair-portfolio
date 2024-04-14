@@ -76,7 +76,7 @@ const ContactMeSection = () => {
     return (
         <FullScreenSection
             isDarkBackground
-            backgroundColor="#141b3d"
+            backgroundColor="#0d1432"
             justifyContent="center"
             alignItems="center"
             spacing={8}

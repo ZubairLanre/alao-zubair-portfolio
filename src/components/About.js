@@ -11,8 +11,7 @@ const About = () => {
         <FullScreenSection 
             justifyContent="center"
             alignItems="center"
-            isDarkBackground
-            backgroundColor="#0d1432"
+            backgroundColor="#fff"
             spacing={16}
             px={{base: "8", md: "24"}}
             py={16}

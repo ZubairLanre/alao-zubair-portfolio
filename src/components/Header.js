@@ -101,10 +101,10 @@ const Header = () => {
             transitionProperty="transform"
             transitionDuration=".3s"
             transitionTimingFunction="ease-in-out"
-            backgroundColor="#ffffff"
+            backgroundColor="#0d1432"
             ref={headerRef}
         >
-            <Box color="#141b3d" maxWidth="1280px" margin="0 auto">
+            <Box color="#fff" maxWidth="1280px" margin="0 auto">
                 <HStack
                     px={8}
                     py={4}

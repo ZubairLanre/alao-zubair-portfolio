@@ -3,10 +3,10 @@ import { Avatar, Heading, Text, VStack, Stack, Button } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import avatarImage from "../images/lanre4b.png";
+import avatarImage from "../images/larry.png";
+import { motion } from "framer-motion";
 
-
-const bio1 = "I'm a Front-End Developer";
+// const bio1 = "I'm Zubair Alao";
 const bio2 = "I'm a Front-End Web Developer skilled in HTML, CSS, JavaScript, and React.  I specialize in building and designing interactive and dynamic web pages that provide an engaging user experience";
 
 const LandingSection = () => {
@@ -22,18 +22,30 @@ const LandingSection = () => {
         <FullScreenSection
             justifyContent="center"
             alignItems="center"
-            backgroundColor="#fffff"
+            backgroundColor="#0d1432"
+            color="#fff"
             px={{base: "8", md: "24"}}
-            pt={110}
+            pt={75}
             pb={24}
         >
-            <Stack spacing={{base: "8", md: "8"}} justifyContent={{base: "center", md: "space-between" }} alignItems="center" direction={{ base: "column", md: "row" }}>
+            <Stack 
+                as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}
+                spacing={{base: "8", md: "8"}} justifyContent={{base: "center", md: "space-between" }} alignItems="center" 
+                direction={{ base: "column", md: "row" }}
+            >
 
 
-                <VStack spacing={8} textAlign="left" align={{base: "center", md: "start"}}  >
+                <VStack 
+                    as={motion.div} 
+                    initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 0.8 }}
+                    spacing={8} textAlign={{base: "center", md: "left"}} align={{base: "center", md: "start"}}  
+                >
                     <VStack align={{base: "center", md: "start"}}>
                         <Heading as="h1" size={{base: "xl", md: "3xl"}} noOfLines={3}>
-                                {bio1}
+                            I'm 
+                            <span style={{ color: "#f39c12", marginLeft: "0.2em" }}>
+                                Zubair Alao
+                            </span>  
                         </Heading>
                         
                         <Text as="p" size="md" textAlign={{base: "justify", md: "left"}}>
@@ -58,9 +70,11 @@ const LandingSection = () => {
                 </VStack>
 
                 <Avatar 
+                    as={motion.div} 
+                    initial={{ x: 100 }} animate={{ x: 0 }} transition={{ duration: 0.8 }}
                     display={{ base: 'none', sm: 'block' }}
                     src={avatarImage}
-                    size={{base: "3xl", md:"3xl"}}
+                    size={{base: "2xl", sm:"3xl"}}
                     name="Alao Zubair Lanre"
                 />
             </Stack>
