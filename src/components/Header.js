@@ -30,19 +30,25 @@ const Header = () => {
         margin="5px 0"
         textDecoration="none"
         position="relative"
+        bg = {props.bg }
+        borderRadius={props.isContact ? "10px" : "0"} 
+        // _hover={{
+        //     textDecoration: "none", // Remove the default underline on hover
+        //     _before: {
+        //         content: '""',
+        //         position: "absolute",
+        //         width: "100%",
+        //         height: "2px",
+        //         bottom: "0",
+        //         left: "0",
+        //         backgroundColor: "#f39c12", // Customize the underline color
+        //     },
+        //     // background: "gray.200", // Customize the background color on hover
+        // }}
         _hover={{
-            textDecoration: "none", // Remove the default underline on hover
-            _before: {
-                content: '""',
-                position: "absolute",
-                width: "100%",
-                height: "2px",
-                bottom: "0",
-                left: "0",
-                backgroundColor: "#f39c12", // Customize the underline color
-            },
-            // background: "gray.200", // Customize the background color on hover
+            transform: "scale(1.05)",
         }}
+        
     >
         {children}
     </Text>
@@ -95,12 +101,12 @@ const Header = () => {
             transitionProperty="transform"
             transitionDuration=".3s"
             transitionTimingFunction="ease-in-out"
-            backgroundColor="#0d1432"
+            backgroundColor="#ffffff"
             ref={headerRef}
         >
-            <Box color="white" maxWidth="1280px" margin="0 auto">
+            <Box color="#141b3d" maxWidth="1280px" margin="0 auto">
                 <HStack
-                    px={16}
+                    px={8}
                     py={4}
                     justifyContent="space-between"
                     alignItems="center"
@@ -118,7 +124,7 @@ const Header = () => {
                                 <MenuItem href="#about" onClick={handleClick("about")}>About</MenuItem>
                                 <MenuItem href="#experience" onClick={handleClick("experience")}>Experience</MenuItem>
                                 <MenuItem href="#projects" onClick={handleClick("projects")}>Projects</MenuItem>
-                                <MenuItem href="#contactme" onClick={handleClick("contactme")}>Contact Me</MenuItem>
+                                <MenuItem href="#contactme" onClick={handleClick("contactme")} bg='#f39c12' isContact={true}>Contact Me</MenuItem>
                         </HStack>
                         <Button ref={btnRef} backgroundColor="#FFF" _hover={{backgroundColor: "#f39c12"}} onClick={onOpen} display={{ base: "block", md: "none" }}>
                             <FontAwesomeIcon icon={faBars}  />

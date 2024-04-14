@@ -16,15 +16,23 @@ const projects = [
         title: "Movie Maze",
         description:
           "Movie Maze is a web application built with React and Chakra UI to help users with information about popular movies and allow them to manage their favorite TV shows effortlessly.",
-        getImageSrc: () => require("../images/MovieMaze.jpg"),
+        getImageSrc: () => require("../images/MovieMaze.png"),
         codeSrc: () => "https://github.com/ZubairAlao/movie-database-app",
         demo: () => "https://moviemazedb.netlify.app/",
+    },
+    {
+        title: "Weather Leaks",
+        description:
+          "A simple Weather App that provides you with accurate and up-to-date weather information with just a click of a button",
+        getImageSrc: () => require("../images/WeatherLeak.png"),
+        codeSrc: () => "https://github.com/ZubairAlao/WeatherLeak",
+        demo: () => "https://weatherleak.netlify.app/",
     },
     {
         title: "Event Naija",
         description:
           "Simple Event Booking system done with React and Chakra UI to help users find and book events.",
-        getImageSrc: () => require("../images/eventnaija.jpg"),
+        getImageSrc: () => require("../images/EventNaija.png"),
         codeSrc: () => "https://github.com/ZubairAlao/event-booking-system",
         demo: () => "https://naijaevent.netlify.app/",
     },
@@ -32,7 +40,7 @@ const projects = [
       title: "E-Commerce Page",
       description:
         "Simple E-Commerce page for adding items to cart using HTML, SCSS, and JavaScript.",
-      getImageSrc: () => require("../images/e-commerce.png"),
+      getImageSrc: () => require("../images/E-commerce-product-page.png"),
       codeSrc: () => "https://github.com/ZubairLanre/ecommerce-product-page",
       demo: () => "https://frontend-commerce-product-page.netlify.app/",
     },
@@ -40,7 +48,7 @@ const projects = [
       title: "JavaScript Quiz",
       description:
         "Intermediate JavaScript Quiz featuring random question selection, previews, timer, and more. Built with HTML, CSS, and JavaScript.",
-      getImageSrc: () => require("../images/javascript-quiz.jpg"),
+      getImageSrc: () => require("../images/JavaScript-Quiz.png"),
       codeSrc: () => "https://github.com/ZubairLanre/javascriptQuiz",
       demo: () => "https://africajsquiz.netlify.app/",
     },
@@ -48,7 +56,7 @@ const projects = [
         title: "Random Fact Generator",
         description:
           "Generate random facts with HTML, CSS, and JavaScript.",
-        getImageSrc: () => require("../images/fact-generator.jpg"),
+        getImageSrc: () => require("../images/Nigeria-Random-Fact-Generator.png"),
         codeSrc: () => "https://github.com/ZubairLanre/randomNigeriaFactsGenerator",
         demo: () => "https://randomnigeriafactsgenerator.netlify.app/",
     },

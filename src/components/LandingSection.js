@@ -20,10 +20,9 @@ const LandingSection = () => {
 
     return (
         <FullScreenSection
-            isDarkBackground
             justifyContent="center"
             alignItems="center"
-            backgroundColor="#141b3d"
+            backgroundColor="#fffff"
             px={{base: "8", md: "24"}}
             pt={110}
             pb={24}

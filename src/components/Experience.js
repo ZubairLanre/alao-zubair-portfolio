@@ -69,8 +69,7 @@ const Experience = () => {
     <FullScreenSection
       justifyContent="center"
       alignItems="center"
-      isDarkBackground
-      backgroundColor="#141b3d"
+      backgroundColor="#ffffff"
       spacing={8}
       px={{ base: "8", md: "24" }}
       py={16}
@@ -142,7 +141,7 @@ const Experience = () => {
                     <Text fontSize="lg" fontWeight="medium">
                     {experience.title}
                     </Text>
-                    <Text color="gray.400">{experience.description}</Text>
+                    <Text color="#141b3d">{experience.description}</Text>
                 </Box>
             </Box>
         ))}
