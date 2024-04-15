@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Millenco",
         description:
-          "Millenco is a financial cooperative focused on empowering individuals through collective financial efforts.",
+          "Millenco is a financial cooperative focused on empowering individuals through collective financial efforts with React, React Query, Firebase, TailwindCSS, Framer Motion.",
         getImageSrc: () => require("../images/millenco.jpg"),
         codeSrc: () => "https://github.com/ZubairAlao/Millenco-coop",
         demo: () => "https://millenco.netlify.app/",
@@ -15,7 +15,7 @@ const projects = [
     {
         title: "Movie Maze",
         description:
-          "Movie Maze is a web application built with React and Chakra UI to help users with information about popular movies and allow them to manage their favorite TV shows effortlessly.",
+          "Movie Maze is a web application built with React, Firebase and Chakra UI to help users with information about popular movies and allow them to manage their favorite TV shows effortlessly.",
         getImageSrc: () => require("../images/MovieMaze.png"),
         codeSrc: () => "https://github.com/ZubairAlao/movie-database-app",
         demo: () => "https://moviemazedb.netlify.app/",
@@ -23,7 +23,7 @@ const projects = [
     {
         title: "Weather Leaks",
         description:
-          "A simple Weather App that provides you with accurate and up-to-date weather information with just a click of a button",
+          "A simple Weather App that provides you with accurate and up-to-date weather done with React, React Query, TailwindCSS",
         getImageSrc: () => require("../images/WeatherLeak.png"),
         codeSrc: () => "https://github.com/ZubairAlao/WeatherLeak",
         demo: () => "https://weatherleak.netlify.app/",
