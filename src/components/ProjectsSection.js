@@ -5,6 +5,14 @@ import Card from "./Card";
 
 const projects = [
     {
+        title: "Naija Deli",
+        description:
+          "Naija Deli is a project on World of Nigerian Popular Tribal Dishes with Nextjs, Cloudinary, MongoDB, TailwindCSS, Typescript.",
+        getImageSrc: () => require("../images/naijadeli.jpg"),
+        codeSrc: () => "https://github.com/ZubairAlao/naija_deli_recipe-app.git",
+        demo: () => "https://naija-deli-recipe.vercel.app/",
+    },
+    {
         title: "Millenco",
         description:
           "Millenco is a financial cooperative focused on empowering individuals through collective financial efforts with React, React Query, Firebase, TailwindCSS, Framer Motion.",

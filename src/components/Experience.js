@@ -17,16 +17,16 @@ const mySkills = [
     skill: "React",
   },
   {
-    skill: "UI/UX",
+    skill: "Nextjs",
   },
   {
     skill: "Git and Github",
   },
   {
-    skill: "Python",
+    skill: "TypeScript",
   },
   {
-    skill: "Flask",
+    skill: "MongoDB",
   },
 ];
 
